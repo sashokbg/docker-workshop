@@ -1,0 +1,65 @@
+Docker Basics
+
+Pre-Requirements
+- Have docker installed
+- Have docker run as non-sudo
+
+Images
+
+Create a docker image
+- Dockerfile
+- Use nginx
+- Put a simple index.html
+
+Managing your images
+- List images
+- Remove images
+
+Containers
+
+Run the docker image as a container
+- Expose the port
+- Test your app
+
+Managing containers
+- List containers
+- Stop / Remove containers
+- Connect to your container
+
+RUN & ENTRYPOINT
+- Create a new image from "alpine:3.14"
+- Use ENTRYPOINT to show current date
+
+Running "ephemeral containers"
+- Example with maven
+- Example with "exec"
+- Run and remove container --rm
+
+Ephemeral Containers = no state
+- Connect to a container and touch a file
+- Restart the container
+- Reconnect. Where is my file ?
+
+Volumes
+
+Managing volumes 
+- Create a volume
+- Use the volume
+- Host directory binding
+
+Networks
+
+Drivers
+- Bridge
+- Host
+
+Create a second docker image
+- use praqma/network-multitool
+- ping the first container
+- curl my-nginx
+
+Orchestrators
+
+Docker-compose
+- Transform to docker compose
+- Run both services
